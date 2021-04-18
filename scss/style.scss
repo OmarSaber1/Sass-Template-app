@@ -1,0 +1,18 @@
+@import './components/navbar';
+@import './components/headerbody';
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+

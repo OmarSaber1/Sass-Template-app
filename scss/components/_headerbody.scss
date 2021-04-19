@@ -1,7 +1,9 @@
 section {
     display: flex;
     font-family: poppins;
-
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     & .left__section {
         padding-top: 65px;
 
@@ -35,6 +37,7 @@ section {
     }
 
     & .right__section {
+        padding-top: 30px;
         transform: translateY(-100px);
         animation: toggleImage 2s linear infinite;
         transition: all 5s ease-in-out;
@@ -49,23 +52,15 @@ section {
 
     25% {
         transform: translateY(20px);
-
-
     }
 
     50% {
         transform: translateY(25px);
-
-
     }
-
     75% {
         transform: translateY(20px);
-
     }
-
     100% {
         transform: translateY(10px);
-
     }
 }

@@ -1,10 +1,12 @@
 header {
   background-image: url("../../images/banner-bg.svg");
   width: 100%;
-  height: 1000px;
 }
 
 nav {
+  position: fixed;
+  top: 0px;
+  z-index: 999;
   margin-bottom: 100px;
   width: 100%;
   display: -webkit-box;
@@ -15,7 +17,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0px;
+  padding: 20px 0px;
+  background-color: aliceblue;
+  -webkit-box-shadow: 2px 0px 4px #121212;
+          box-shadow: 2px 0px 4px #121212;
 }
 nav .nav__list {
   margin-right: -13px;
@@ -107,6 +112,9 @@ section {
   display: -ms-flexbox;
   display: flex;
   font-family: poppins;
+  margin-top: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 section .left__section {
   padding-top: 65px;
@@ -135,6 +143,7 @@ section .left__section button {
   background-color: #16D5FF;
 }
 section .right__section {
+  padding-top: 30px;
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
   -webkit-animation: toggleImage 2s linear infinite;

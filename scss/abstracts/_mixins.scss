@@ -1,0 +1,52 @@
+@mixin headerMix {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .header {
+        text-align: center;
+        padding-bottom: 4rem;
+
+        label {
+            color: $lightblue;
+            padding: 0 0 3px;
+            font-size: .95rem;
+            font-family: poppins;
+        }
+
+        h1 {
+            padding: 0 0 18px;
+        }
+
+        p {
+            color: #999999;
+            font-size: 14px;
+        }
+    }
+}
+
+@mixin button {
+   
+    padding: 10px 30;
+    background-color: #16d5ff;
+    border-color: #16d5ff;
+    border: 1px solid #16d5ff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        transition: .4s ease-in-out;
+        transform: translateY(-5px);
+        border-bottom: 2px solid springgreen
+    }
+
+    &::before {
+        content: "";
+        height: 10px;
+        width: 90%
+    }
+
+}

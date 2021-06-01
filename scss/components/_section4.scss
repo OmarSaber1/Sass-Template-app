@@ -1,0 +1,46 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.left__section{
+    img{
+        width: 100%;
+    }
+}
+.section4{
+    background-color: $offwhite;
+    padding: 80px 0px 0px;
+    .col-sm-12 .right__section{
+        margin-top: 50px;
+        text-align: center;
+    }
+    label{
+        font-family: poppins;
+        padding: 0 0 3px;
+        font-size: 14px;
+        color: $lightblue;
+    }
+    h2{
+        font-family: poppins;
+        padding:0 0 18px;
+        font-size: 40px;
+    }
+    p{
+        padding: 0 0 12px;
+        margin: 0px;
+        color:$grey;
+    }
+     #p1{
+        padding:0 0 20px;
+        font-size: 14px;
+    }
+    i{
+      color: $lightblue;
+    }
+    button{
+        @include button;
+        margin-top: 30px;
+        padding:14px 22px;
+        font-size: 14px;
+        font-family: poppins;
+    }
+}

@@ -1,0 +1,45 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.section3{
+    @include headerMix;
+    .header{
+        p{
+            min-width: 300px;
+        }
+    }
+    .bottom{
+        a{
+            text-decoration: none;
+            color: black;
+            transition: .4s ease-in-out ;
+            &:hover{
+                color:$lightblue;
+            }
+        }
+       .row{
+           img{
+               height: 52px;
+           }
+           p{
+               padding-top: 20px;
+               font-size: 14px;
+               color: $grey;
+           }
+           a{
+            font-family: lato;
+               padding-top: 15px;
+               font-size: 24px;
+           }
+           .col-sm-12{
+                   text-align: center;
+                   max-width: 280px;
+           }
+           .col-12{
+                text-align: center;
+                padding-top: 25px;
+                   max-width: 250px;
+           }
+       }
+    }
+}

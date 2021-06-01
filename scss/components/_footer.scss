@@ -1,0 +1,30 @@
+@import '../abstracts/variables';
+
+footer{
+    padding: 100px 20px 30px;
+    background-image: url('../../images/footer-petrn.png');
+    background-color: rgb(151, 211, 235);
+    .socialMedia__icons{
+        margin-top: 20px;
+    }
+    .center{
+        max-width: 420px;
+        
+    }
+    label{
+        padding: 0 0 15px;
+        font-size: 18px;
+        color: #111111;
+        font-family: lato;
+    }
+    i{
+        color:white
+    }
+    li{
+        display: inline-block;
+        padding: 0 0 10px;
+        width: 124px;
+        height: 34px;
+    }
+
+}

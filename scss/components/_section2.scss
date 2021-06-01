@@ -1,0 +1,98 @@
+@import '../abstracts/variables';
+
+.section2 {
+    background-color: $offwhite;
+    width: 100%;
+    display: grid;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .header {
+        text-align: center;
+        padding-bottom: 4rem;
+        text-align: center;
+        label{
+            color:$lightblue;
+            padding: 0 0 3px;
+            font-size: .95rem;
+            font-family: poppins;
+        }
+        h1{
+            padding: 0 0 18px;
+        }
+        p{
+            color: #999999;
+            margin: 0px 310px;
+            font-size: 14px;
+            margin: 0px;
+        }
+    }
+
+    .bottom__side {
+        margin: 0px 60px;
+        display: flex;
+        justify-content: space-around;
+
+
+        .left__side {
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding-top: 20px;
+            transition: .4s ease-in-out;
+            animation: rotateAnimation 10s infinite;
+        }
+
+        .right__side {
+            max-width: 500px;
+
+            h1 {
+                font-family: poppins;
+                color: $lightblue;
+                font-size: 30px;
+                padding: 20px 0 25px;
+                color: $lightblue;
+            }
+
+            p {
+                font-family: lato;
+                line-height: 30px;
+                font-size:  14px;
+                color: #111111;
+                i{
+                    color: $lightblue;
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(60deg);
+    }
+
+    20% {
+        transform: rotate(120deg);
+    }
+
+    40% {
+        transform: rotate(180deg);
+    }
+
+    60% {
+        transform: rotate(240deg);
+    }
+    80% {
+        transform: rotate(300deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 735px) {
+      .section2 img {
+            width: 350px;
+        }
+  }
